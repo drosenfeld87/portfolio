@@ -55,7 +55,8 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/placeholder.png");
+      object-fit: contain;
+      background: url("../img/profile-crop.jpg");
       border-radius: 50%;
       border: solid 3px #eece1a; }
   .menu .nav-item {
@@ -261,7 +262,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("..img/placeholder.png");
+      background: url("../img/profile-crop.jpg");
       width: 150px;
       height: 150px; }
   .about-info {
