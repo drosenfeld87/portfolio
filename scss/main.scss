@@ -1,5 +1,5 @@
 $primary-color: #444;
-$secondary-color: #2EE844;
+$secondary-color: #53CB7A;
 $show-home-image: true;
 $home-image: url(../img/GraffitiAlley-85-website.jpg);
 $background-opacity: 0.9;
@@ -144,12 +144,13 @@ main {
 //Work Projects
 .projects {
   display: grid;
+  margin: 5% 0 0 0;
   grid-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
 
   img {
     width: 100%;
-    border: 3px #fff solid;
+    border: 2px #fff solid;
 
     &:hover {
       opacity: 0.5;
@@ -161,7 +162,7 @@ main {
 
 //Button Styles
 .btn {
-  display: inline-block;
+  display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
@@ -171,6 +172,7 @@ main {
     color: $secondary-color;
   }
 }
+
 
 #main-footer {
   text-align: center;

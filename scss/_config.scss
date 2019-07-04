@@ -1,5 +1,5 @@
 $primary-color: #444;
-$secondary-color: #2EE844;
+$secondary-color: #53CB7A;
 $show-home-image: true;
 $home-image: url(../img/GraffitiAlley-85-website.jpg);
 $background-opacity: 0.6;
@@ -26,15 +26,6 @@ $background-opacity: 0.6;
         background: rgba($primary-color, $background-opacity);
       }
     }
-  }
-}
-
-// Set Text Colour
-@function set-text-color($color) {
-  @if (lightness($color) > 40) {
-    @return #000;
-  }@else {
-    @return #fff;
   }
 }
 
