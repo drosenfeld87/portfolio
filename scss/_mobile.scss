@@ -68,6 +68,24 @@
   .projects {
     grid-template-columns: repeat(2, 1fr)
   }
+
+  .project-details {
+      width: 80vw;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 0;
+        img {
+          width: 55vw;
+        }
+    }
+
+  .project-images {
+    grid-template-areas:
+    'sketches-1'
+    'sketches-2';
+
+    grid-template-columns: 1fr;
+  }
 }
 // smartphones
 
