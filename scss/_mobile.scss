@@ -70,13 +70,9 @@
   }
 
   .project-details {
-      width: 80vw;
-      margin: 0 auto;
+      width: 100%;
       overflow: hidden;
       padding: 0;
-        img {
-          width: 55vw;
-        }
     }
 
   .project-images {
@@ -97,4 +93,12 @@
   .projects {
     grid-template-columns: 1fr;
   }
+
+  .project-details {
+      overflow: hidden;
+      padding: 0;
+        img {
+          width: 60vw;
+        }
+    }
 }
