@@ -73,6 +73,9 @@
       width: 100%;
       overflow: hidden;
       padding: 0;
+        img {
+          width: 75%;
+        }
     }
 
   .project-images {
@@ -95,10 +98,12 @@
   }
 
   .project-details {
+      width: 100%;
       overflow: hidden;
       padding: 0;
         img {
-          width: 60vw;
+          width: 100%;
         }
+
     }
 }
