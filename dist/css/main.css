@@ -189,18 +189,14 @@ main {
       transition: all 0.5s ease-out; }
 
 .project-details {
-  width: 55vw;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 0 2rem 0; }
-
-.project-images {
-  display: grid;
-  grid-gap: 2rem;
-  margin: 5% 0 0 0;
-  grid-template-columns: repeat(2, 1fr); }
-  .project-images img {
+  overflow-x: hidden; }
+  .project-details .project-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    border: 2px #fff solid; }
+    padding: 15px; }
 
 .boxes {
   display: flex;
@@ -274,25 +270,10 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); }
-  .project-details {
-    width: 100%;
-    overflow: hidden;
-    padding: 0; }
-    .project-details img {
-      width: 75%; }
-  .project-images {
-    grid-template-areas: 'sketches-1' 'sketches-2';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
   .projects {
-    grid-template-columns: 1fr; }
-  .project-details {
-    width: 100%;
-    overflow: hidden;
-    padding: 0; }
-    .project-details img {
-      width: 100%; } }
+    grid-template-columns: 1fr; } }

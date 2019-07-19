@@ -68,23 +68,6 @@
   .projects {
     grid-template-columns: repeat(2, 1fr)
   }
-
-  .project-details {
-      width: 100%;
-      overflow: hidden;
-      padding: 0;
-        img {
-          width: 75%;
-        }
-    }
-
-  .project-images {
-    grid-template-areas:
-    'sketches-1'
-    'sketches-2';
-
-    grid-template-columns: 1fr;
-  }
 }
 // smartphones
 
@@ -96,14 +79,4 @@
   .projects {
     grid-template-columns: 1fr;
   }
-
-  .project-details {
-      width: 100%;
-      overflow: hidden;
-      padding: 0;
-        img {
-          width: 100%;
-        }
-
-    }
 }
