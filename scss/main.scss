@@ -1,8 +1,8 @@
-$primary-color: #444;
-$secondary-color: #53CB7A;
+$primary-color: #fff;
+$secondary-color: #25B176;
 $show-home-image: true;
 $home-image: url(../img/GraffitiAlley-85-website.jpg);
-$background-opacity: 0.9;
+$background-opacity: 0.5;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -39,7 +39,7 @@ $background-opacity: 0.9;
 body {
   @include background;
   background: $primary-color;
-  color: #fff;
+  color: #444;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -64,7 +64,7 @@ h1, h2, h3 {
 }
 
 a  {
-  color: #fff;
+  color: #444;
   text-decoration: none;
 }
 
@@ -165,6 +165,16 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   overflow-x: hidden;
+
+  .project-main-image {
+    width: 100%;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
 
   .project-images {
     display: grid;
