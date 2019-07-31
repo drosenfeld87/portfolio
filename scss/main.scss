@@ -102,6 +102,20 @@ main {
         margin-top: 20vh;
       }
     }
+
+    .trans-box {
+      background-color: #fff;
+      opacity: .5;
+    }
+
+    .trans-box::before,
+    .trans-box::after {
+      content: '';
+      position: absolute;
+      bottom  : 0;
+      z-index : -1;
+      background-color: #fff;
+      opacity: .5;
 }
 
 .about-info {
@@ -176,14 +190,6 @@ main {
     }
   }
 
-  .project-images {
-    display: grid;
-    grid-template-areas:
-    'sketches-1 sketches-2';
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    padding: 15px;
-  }
 }
 
 //Contact page
