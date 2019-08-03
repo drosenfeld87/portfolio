@@ -1,3 +1,5 @@
+@import '_mobile';
+
 $primary-color: #fff;
 $secondary-color: #25B176;
 $show-home-image: true;
@@ -104,8 +106,9 @@ main {
     }
 
     .trans-box {
-      background-color: #fff;
-      opacity: .5;
+      // background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.5);
+      // opacity: .5;
     }
 
     .trans-box::before,
@@ -189,7 +192,12 @@ main {
       @include easeOut;
     }
   }
-
+  .sketches {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 //Contact page
@@ -236,5 +244,4 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
-
-@import 'mobile';
+}
