@@ -1,5 +1,3 @@
-@import '_mobile';
-
 $primary-color: #fff;
 $secondary-color: #25B176;
 $show-home-image: true;
@@ -31,8 +29,9 @@ $background-opacity: 0.4;
   }
 }
 
-@import 'menu';
-@import 'config';
+@import "mobile";
+@import "menu";
+@import "config";
 
 * {
   box-sizing: border-box;
@@ -79,6 +78,7 @@ header {
 .text-secondary {
   color: $secondary-color;
 }
+
 
 main {
   padding: 4rem;
@@ -191,12 +191,12 @@ main {
       border-color: $secondary-color;
       @include easeOut;
     }
-  }
-  .sketches {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    .sketches {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
   }
 }
 
@@ -236,12 +236,11 @@ main {
   }
 }
 
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: darken($primary-color, 10);
-  color: set-text-color($primary-color);
-  height: 60px;
-}
+  #main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary-color, 10);
+    color: set-text-color($primary-color);
+    height: 60px;
+  }
 }
