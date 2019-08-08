@@ -106,9 +106,8 @@ main {
     }
 
     .trans-box {
-      // background-color: #fff;
-      background-color: rgba(255, 255, 255, 0.5);
-      // opacity: .5;
+      background-color: #fff;
+      opacity: .5;
     }
 
     .trans-box::before,
@@ -191,6 +190,7 @@ main {
       border-color: $secondary-color;
       @include easeOut;
     }
+<<<<<<< HEAD
     .sketches {
       display: flex;
       flex-direction: row;
@@ -198,6 +198,10 @@ main {
       align-items: center;
     }
   }
+=======
+  }
+
+>>>>>>> parent of dd99b8b... fixed imports in mobile.scss to mixins and fixed trans box behind text
 }
 
 //Contact page
@@ -236,6 +240,7 @@ main {
   }
 }
 
+<<<<<<< HEAD
   #main-footer {
     text-align: center;
     padding: 1rem;
@@ -244,3 +249,15 @@ main {
     height: 60px;
   }
 }
+=======
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
+}
+
+@import 'mobile';
+>>>>>>> parent of dd99b8b... fixed imports in mobile.scss to mixins and fixed trans box behind text
