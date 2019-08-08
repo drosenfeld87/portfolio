@@ -29,9 +29,10 @@ $background-opacity: 0.4;
   }
 }
 
-@import "mobile";
-@import "menu";
-@import "config";
+@import 'config';
+@import 'mobile';
+@import 'menu';
+
 
 * {
   box-sizing: border-box;
@@ -156,53 +157,40 @@ main {
       border-bottom: $secondary-color 5px solid;
     }
 }
-
 //Work Projects
-.projects {
-  display: grid;
-  margin: 5% 0 0 0;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
+  .projects {
+    display: grid;
+    margin: 5% 0 0 0;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
 
-  img {
-    width: 100%;
-    border: 2px #fff solid;
+    img {
+      width: 100%;
+      border: 2px #fff solid;
 
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
+      &:hover {
+        opacity: 0.5;
+        border-color: $secondary-color;
+        @include easeOut;
+      }
     }
   }
-}
-
 //Project pages
-.project-details {
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow-x: hidden;
+  .project-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: hidden;
 
-  .project-main-image {
-    width: 100%;
+    .project-main-image {
+      width: 100%;
 
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
-    }
-<<<<<<< HEAD
-    .sketches {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
+      &:hover {
+        opacity: 0.5;
+        border-color: $secondary-color;
+        @include easeOut;
+      }
     }
   }
-=======
-  }
-
->>>>>>> parent of dd99b8b... fixed imports in mobile.scss to mixins and fixed trans box behind text
-}
 
 //Contact page
 .boxes {
@@ -227,30 +215,19 @@ main {
   }
 }
 
-//Button Styles
-.btn {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem;
+  //Button Styles
+    .btn {
+      display: block;
+      padding: 0.5rem 1rem;
+      border: 0;
+      margin-bottom: 0.3rem;
 
-  &:hover {
-    background: $secondary-color;
-    color: $secondary-color;
-  }
+      &:hover {
+        background: $secondary-color;
+        color: $secondary-color;
+      }
+    }
 }
-
-<<<<<<< HEAD
-  #main-footer {
-    text-align: center;
-    padding: 1rem;
-    background: darken($primary-color, 10);
-    color: set-text-color($primary-color);
-    height: 60px;
-  }
-}
-=======
-
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -258,6 +235,3 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
-
-@import 'mobile';
->>>>>>> parent of dd99b8b... fixed imports in mobile.scss to mixins and fixed trans box behind text
