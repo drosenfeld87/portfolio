@@ -188,6 +188,16 @@ main {
         border-color: $secondary-color;
         @include easeOut;
       }
+      .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+        justify-content: space-between;
+      }
+
+      .sketch-notes {
+        width: 100%;
+      }
     }
   }
 

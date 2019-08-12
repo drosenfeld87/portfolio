@@ -253,6 +253,13 @@ main {
         opacity: 0.5;
         border-color: #25B176;
         transition: all 0.5s ease-out; }
+      main .project-details .project-main-image .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+        justify-content: space-between; }
+      main .project-details .project-main-image .sketch-notes {
+        width: 100%; }
   main .boxes {
     display: flex;
     flex-wrap: wrap;
