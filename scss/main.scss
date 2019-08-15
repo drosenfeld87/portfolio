@@ -107,8 +107,7 @@ main {
 
     .trans-box {
       background-color: rgba(255, 255, 255, 0.5);
-      padding: 10px;
-      border-radius: 10px;
+      padding: 0px 10px 10px;
     }
 
   .about-info {
@@ -179,16 +178,17 @@ main {
         border-color: $secondary-color;
         @include easeOut;
       }
-      .wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 5px;
-        justify-content: space-between;
-      }
-
-      .sketch-notes {
-        width: 100%;
-      }
+        .container {
+          margin: 0 auto;
+          max-width: 1200px;
+          padding: 0 1rem;
+        }
+          .responsive-image {
+            max-width: 100%;
+          }
+            .cell sketch-img {
+            display: block;
+          }
     }
   }
 
