@@ -45,13 +45,13 @@
     flex-wrap: wrap;
     flex-direction: row; }
   #project-page .cell {
-    width: 50%; } }
+    width: 100%; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
   #project-page .cell {
-    width: calc(100% / 3); } }
+    width: calc(100% / 2); } }
 
 .menu-btn {
   position: absolute;
@@ -153,7 +153,6 @@ body {
   color: #444;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/GraffitiAlley-85-website.jpg);
@@ -254,11 +253,14 @@ main {
         border-color: #25B176;
         transition: all 0.5s ease-out; }
     main .project-details .container {
+      display: inline-block;
       margin: 0 auto;
-      max-width: 1200px;
-      padding: 0 1rem; }
+      max-width: 800px; }
+    main .project-details .grid {
+      display: inline-flex; }
     main .project-details .responsive-image {
-      max-width: 100%; }
+      max-width: 100%;
+      padding: 1rem; }
   main .boxes {
     display: flex;
     flex-wrap: wrap;

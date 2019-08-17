@@ -43,7 +43,7 @@ body {
   color: #444;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  // font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -179,14 +179,18 @@ main {
         @include easeOut;
       }
     }
-    .container {
-      margin: 0 auto;
-      max-width: 1200px;
-      padding: 0 1rem;
-    }
-      .responsive-image {
-        max-width: 100%;
+      .container {
+        display: inline-block;
+        margin: 0 auto;
+        max-width: 800px;
       }
+        .grid {
+          display: inline-flex;
+        }
+          .responsive-image {
+            max-width: 100%;
+            padding: 1rem;
+          }
   }
 
 //Contact page

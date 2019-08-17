@@ -84,7 +84,7 @@ header {
       flex-direction: row;
     }
     .cell {
-      width: 50%;
+      width: 100%;
     }
   }
 }
@@ -97,7 +97,7 @@ header {
 
   #project-page {
     .cell {
-      width: calc(100% / 3);
+      width: calc(100% / 2);
     }
   }
 }
