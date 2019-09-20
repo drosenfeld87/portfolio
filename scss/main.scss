@@ -198,6 +198,18 @@ main {
             }
   }
 
+  .creative {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+        .creative-images {
+          width: 100%;
+          max-width: 800px;
+          height: auto;
+        }
+    }
+
 //Contact page
 .boxes {
   display: flex;

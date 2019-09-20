@@ -266,6 +266,14 @@ main {
     main .project-details .tnt-old-website {
       display: flex;
       margin: 0 auto; }
+  main .creative {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    main .creative .creative-images {
+      width: 100%;
+      max-width: 800px;
+      height: auto; }
   main .boxes {
     display: flex;
     flex-wrap: wrap;
