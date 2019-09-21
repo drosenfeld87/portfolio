@@ -1,14 +1,14 @@
 
 
 //Media query mixins
-@mixin mediaSm {
-  @media screen and (max-width: 500px) {
-    @content;
-  }
-}
+// @mixin mediaSm {
+//   @media screen and (max-width: 500px) {
+//     @content;
+//   }
+// }
 
 @mixin mediaMd {
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 0px ) and (max-width: 768px) {
     @content;
   }
 }
