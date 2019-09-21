@@ -53,8 +53,12 @@ h1, h2, h3 {
   margin: 0;
   font-weight: 400;
 
+  &.xl-heading {
+    font-size: 5rem;
+  }
+
     &.lg-heading {
-      font-size: 5rem;
+      font-size: 3rem;
     }
 
     &.sm-heading {
