@@ -190,6 +190,7 @@ main {
           .responsive-image {
             max-width: 100%;
             padding: 1rem;
+            margin: 0 auto;
           }
             .tnt-old-website {
               display: flex;
@@ -203,6 +204,7 @@ main {
       margin: 0 auto;
 
         .creative-images {
+          max-width: 50%;
           justify-content: center;
           align-items: center;
         }
