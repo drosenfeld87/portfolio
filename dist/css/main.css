@@ -10,9 +10,10 @@
   main {
     align-items: center;
     text-align: center; }
-    main .lg-heading {
+    main h1.lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      font-size: 2.5rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -166,10 +167,8 @@ body {
 h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
-  h1.xl-heading, h2.xl-heading, h3.xl-heading {
-    font-size: 5rem; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 3rem; }
+    font-size: 5rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
@@ -265,11 +264,10 @@ main {
   main .creative {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    margin: 0 auto; }
     main .creative .creative-images {
-      width: 100%;
-      max-width: 800px;
-      height: auto; }
+      justify-content: center;
+      align-items: center; }
   main .boxes {
     display: flex;
     flex-wrap: wrap;

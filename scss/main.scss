@@ -53,14 +53,9 @@ h1, h2, h3 {
   margin: 0;
   font-weight: 400;
 
-  &.xl-heading {
+  &.lg-heading {
     font-size: 5rem;
   }
-
-    &.lg-heading {
-      font-size: 3rem;
-    }
-
     &.sm-heading {
       margin-bottom: 2rem;
       padding: 0.2rem 1rem;
@@ -205,14 +200,14 @@ main {
   .creative {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      margin: 0 auto;
 
         .creative-images {
-          width: 100%;
-          max-width: 800px;
-          height: auto;
+          justify-content: center;
+          align-items: center;
         }
     }
+
 
 //Contact page
 .boxes {
