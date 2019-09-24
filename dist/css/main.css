@@ -37,6 +37,9 @@
   #about .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
+  #contact .boxes div {
+    font-size: 1.25rem !important;
+    padding: .5rem; }
   #work .projects {
     grid-template-columns: 1fr; }
   #work .project-images {
@@ -155,7 +158,8 @@ body {
   body#bg-img {
     background: url(../img/GraffitiAlley-85-website.jpg);
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
     body#bg-img:after {
       content: '';
       position: absolute;
