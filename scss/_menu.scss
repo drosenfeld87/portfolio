@@ -87,14 +87,6 @@
       //Slide In From bottom
       transform: translate3d(0,0,0);
     }
-
-    .portrait {
-      width: 250px;
-      height: 250px;
-      background: url('../img/profile-crop.jpg');
-      border-radius: 50%;
-      border: solid 3px $secondary-color;
-    }
   }
 
   .nav-item {
