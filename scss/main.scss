@@ -1,33 +1,11 @@
 $primary-color: #fff;
 $secondary-color: #25B176;
-$show-home-image: true;
-$home-image: url(../img/GraffitiAlley-85-website.jpg);
-$background-opacity: 0.4;
+// $show-home-image: true;
+// $home-image: url(../img/GraffitiAlley-85-website.jpg);
+// $background-opacity: 0.4;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
-}
-
-@mixin background {
-  @if $show-home-image {
-    &#bg-img {
-      background: $home-image;
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-
-      &:after {
-        content:'';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background: rgba($primary-color, $background-opacity);
-      }
-    }
-  }
 }
 
 @import 'config';
@@ -39,40 +17,74 @@ $background-opacity: 0.4;
 }
 
 body {
-  @include background;
-  background: $primary-color;
-  color: #444;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   height: 100%;
   margin: 0;
-  font-family: 'Lexend Deca', sans-serif;
-  line-height: 1.6;
+  font-family: 'Futura', Helvetica, sans-serif;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 // Headings
 
 h1, h2, h3 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 
   &.lg-heading {
     font-size: 5rem;
+    text-transform: uppercase;
   }
     &.sm-heading {
       margin-bottom: 2rem;
       padding: 0.2rem 1rem;
-      background: rgba(lighten($primary-color, 2), 0.5);
     }
+}
+
+.header-container {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 90px;
+    max-width: 100%;
+    text-transform: uppercase;
+    line-height: .77;
+    background-color: white;
+    letter-spacing: -6.5px;
+    color: black;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+  }
 }
 
 a  {
   color: #444;
   text-decoration: none;
-}
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
 }
 
 .text-secondary {
@@ -82,7 +94,6 @@ header {
 
 main {
   padding: 4rem;
-  // height: 100%;
   min-height: calc(100vh - 60px);
 
     .icons {
@@ -101,18 +112,12 @@ main {
     &#home {
       overflow: hidden;
       h1 {
-        margin-top: 20vh;
+        margin-top: 40vh;
       }
-    }
-
-    .trans-box {
-      background-color: rgba(255, 255, 255, 0.5);
-      padding: 0px 10px 10px;
     }
 
   .about-info {
     display: grid;
-    grid-gap: 30px;
     grid-template-areas:
     'bioimage bio bio'
     'job1 job2 job3';
@@ -142,7 +147,6 @@ main {
 
     .job {
       background: lighten($primary-color, 5);
-      padding: 0.5rem;
       border-bottom: $secondary-color 5px solid;
     }
   }
@@ -151,7 +155,6 @@ main {
     display: grid;
     text-align: center;
     margin: 5% 0 0 0;
-    grid-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
 
     img {

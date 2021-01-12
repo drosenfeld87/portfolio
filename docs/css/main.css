@@ -138,45 +138,60 @@
   box-sizing: border-box; }
 
 body {
-  background: #fff;
-  color: #444;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   height: 100%;
   margin: 0;
-  font-family: 'Lexend Deca', sans-serif;
-  line-height: 1.6; }
-  body#bg-img {
-    background: url(../img/GraffitiAlley-85-website.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center; }
-    body#bg-img:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: rgba(255, 255, 255, 0.4); }
+  font-family: 'Futura', Helvetica, sans-serif; }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 
 h1, h2, h3 {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 700;
+  letter-spacing: -0.5px; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 5rem; }
+    font-size: 5rem;
+    text-transform: uppercase; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(255, 255, 255, 0.5); }
+    padding: 0.2rem 1rem; }
+
+.header-container {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header-container h1 {
+    font-size: 90px;
+    max-width: 100%;
+    text-transform: uppercase;
+    line-height: .77;
+    background-color: white;
+    letter-spacing: -6.5px;
+    color: black;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen; }
 
 a {
   color: #444;
   text-decoration: none; }
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%; }
 
 .text-secondary {
   color: #25B176; }
@@ -194,13 +209,9 @@ main {
   main#home {
     overflow: hidden; }
     main#home h1 {
-      margin-top: 20vh; }
-  main .trans-box {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 0px 10px 10px; }
+      margin-top: 40vh; }
   main .about-info {
     display: grid;
-    grid-gap: 30px;
     grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
     grid-template-columns: repeat(3, 1fr); }
     main .about-info .bio-image {
@@ -219,13 +230,11 @@ main {
       grid-area: job3; }
     main .about-info .job {
       background: white;
-      padding: 0.5rem;
       border-bottom: #25B176 5px solid; }
   main .projects {
     display: grid;
     text-align: center;
     margin: 5% 0 0 0;
-    grid-gap: 2rem;
     grid-template-columns: repeat(3, 1fr); }
     main .projects img {
       width: 100%;
