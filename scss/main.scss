@@ -1,33 +1,8 @@
 $primary-color: #fff;
 $secondary-color: #25B176;
-$show-home-image: true;
-$home-image: url(../img/GraffitiAlley-85-website.jpg);
-$background-opacity: 0.4;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
-}
-
-@mixin background {
-  @if $show-home-image {
-    &#bg-img {
-      background: $home-image;
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-
-      &:after {
-        content:'';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background: rgba($primary-color, $background-opacity);
-      }
-    }
-  }
 }
 
 @import 'config';
@@ -39,7 +14,6 @@ $background-opacity: 0.4;
 }
 
 body {
-  @include background;
   background: $primary-color;
   color: #444;
   height: 100%;
@@ -60,7 +34,6 @@ h1, h2, h3 {
     &.sm-heading {
       margin-bottom: 2rem;
       padding: 0.2rem 1rem;
-      background: rgba(lighten($primary-color, 2), 0.5);
     }
 }
 
@@ -82,7 +55,6 @@ header {
 
 main {
   padding: 4rem;
-  // height: 100%;
   min-height: calc(100vh - 60px);
 
     .icons {
@@ -98,17 +70,10 @@ main {
       }
     }
 
-    &#home {
-      overflow: hidden;
-      h1 {
-        margin-top: 20vh;
-      }
-    }
-
-    .trans-box {
-      background-color: rgba(255, 255, 255, 0.5);
-      padding: 0px 10px 10px;
-    }
+  #hero {
+    height: 100vh;
+    text-align: center;
+  }  
 
   .about-info {
     display: grid;
@@ -248,6 +213,7 @@ main {
       }
     }
 }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
